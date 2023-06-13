@@ -20,5 +20,6 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/',saludo)
+    path('saludo/',saludo),
+    path('edad/<int:year>/<int:age>/',calcularEdad)
 ]

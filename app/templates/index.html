@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<h1>Hola</h1>
+	<p>Fecha y hora actual: {{fecha_actual}}</p>
+	<p>{{persona.nombre}} {{persona.apellido.upper}}</p>
+	{%if temas%}
+		<p><b>Temas del curso</b></p>
+		<ol>
+		
+			{%for tema in temas%}
+				<li>{{tema}}</li>
+			{%endfor%}
+		</ol>
+	{%else%}
+		<p>No hay temas</p>
+	{%endif%}
+
+</body>
+</html>
